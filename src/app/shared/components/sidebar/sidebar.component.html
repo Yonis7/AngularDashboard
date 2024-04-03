@@ -1,1 +1,37 @@
-<p>sidebar works!</p>
+<mat-nav-list>
+  <!-- Profile Card -->
+  <div class="profile-card">
+    <!-- Profile header -->
+    <div class="header">
+      <h2>Yoonis Aden</h2>
+      <h4>example@gmail.com</h4>
+    </div>
+    <!-- Profile image -->
+    <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="" />
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <!-- Subheader for Pages -->
+  <h2 matSubheader>Pages</h2>
+
+  <!-- Navigation links for Pages -->
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/">Dashboard</a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">Posts</a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/articles">Articles</a>
+
+  <mat-divider></mat-divider>
+
+  <!-- Subheader for Tools -->
+  <h2 matSubheader>Tools</h2>
+
+  <!-- Navigation links for Tools -->
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+    <mat-icon>import_contacts</mat-icon>
+    Contacts
+  </a>
+  <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+    <mat-icon>contact_phone</mat-icon>
+    Leads
+  </a>
+</mat-nav-list>

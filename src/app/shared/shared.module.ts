@@ -9,6 +9,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatListModule} from '@angular/material/list';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -19,6 +21,8 @@ import {MatMenuModule} from '@angular/material/menu';
     SidebarComponent,
     FooterComponent
   ],
+
+  // Imports array is used to import other Angular modules. They can be accessed by all components declared in the current module.
   imports: [
     CommonModule,
     MatDividerModule,
@@ -26,7 +30,11 @@ import {MatMenuModule} from '@angular/material/menu';
     MatIconModule,
     MatButtonModule,
     FlexLayoutModule,
-    MatMenuModule
+    MatMenuModule,
+    RouterModule,
+    MatListModule
+
+
   ],
   // Exports array is used to export components, directives, and pipes so that they can be used in other modules.
   exports: [
