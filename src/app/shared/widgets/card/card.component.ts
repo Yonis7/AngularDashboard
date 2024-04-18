@@ -14,6 +14,7 @@ export class CardComponent implements OnInit{
   @Input() label: string | undefined;
   @Input() total: string | undefined;
   @Input() percentage: string | undefined;
+  @Input() data: any = [];
 
   Highcharts = Highcharts;
   chartOptions = {};
@@ -68,7 +69,7 @@ export class CardComponent implements OnInit{
       },
       series: [
         {
-          data: [71, 78, 39, 66, 45, 30, 40],
+          data: this.data
         }
       ]
   };
@@ -81,6 +82,6 @@ export class CardComponent implements OnInit{
     }, 300);
 
    }
-   
+
 
 }
