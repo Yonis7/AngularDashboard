@@ -14,17 +14,19 @@ import { RouterModule } from '@angular/router';
 import { AreaComponent } from './widgets/area/area.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { CardComponent } from './widgets/card/card.component';
+import { PieComponent } from './widgets/pie/pie.component';
 
 
 
 @NgModule({
-  // Declarations array is used to declare components, directives, and pipes.
+  // Declarations array is used to declare components, directives, and pipes. The current module can use these components, directives, and pipes.
   declarations: [
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
     AreaComponent,
     CardComponent,
+    PieComponent,
 
   ],
 
@@ -50,6 +52,7 @@ import { CardComponent } from './widgets/card/card.component';
     FooterComponent,
     AreaComponent,
     CardComponent,
+    PieComponent,
 
   ]
 })
