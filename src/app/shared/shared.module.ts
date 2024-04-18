@@ -11,6 +11,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatListModule} from '@angular/material/list';
 import { RouterModule } from '@angular/router';
+import { AreaComponent } from './widgets/area/area.component';
+import { HighchartsChartModule } from 'highcharts-angular';
+import { CardComponent } from './widgets/card/card.component';
 
 
 
@@ -19,7 +22,10 @@ import { RouterModule } from '@angular/router';
   declarations: [
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    AreaComponent,
+    CardComponent,
+
   ],
 
   // Imports array is used to import other Angular modules. They can be accessed by all components declared in the current module.
@@ -32,7 +38,8 @@ import { RouterModule } from '@angular/router';
     FlexLayoutModule,
     MatMenuModule,
     RouterModule,
-    MatListModule
+    MatListModule,
+    HighchartsChartModule
 
 
   ],
@@ -40,7 +47,10 @@ import { RouterModule } from '@angular/router';
   exports: [
     HeaderComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    AreaComponent,
+    CardComponent,
+
   ]
 })
 export class SharedModule { }
